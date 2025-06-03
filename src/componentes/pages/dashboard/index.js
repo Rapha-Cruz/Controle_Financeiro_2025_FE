@@ -27,13 +27,13 @@ const fetchMovimentacoes = async () => {
 };
 
 export default function Dashboard() {
-    const [startDate, setStartDate] = useState(new Date());
+  //   const [startDate, setStartDate] = useState(new Date());
     const [movimentacoes, setMovimentacoes] = useState([]);
     const [totalEntradas, setTotalEntradas] = useState(0);
     const [totalSaidas, setTotalSaidas] = useState(0);
     const [data, setData] = useState('');
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    // const [loading, setLoading] = useState(true);
+    // const [error, setError] = useState(null);
   
    useEffect(() => {
       const carregarMovimentacoes = async () => {
