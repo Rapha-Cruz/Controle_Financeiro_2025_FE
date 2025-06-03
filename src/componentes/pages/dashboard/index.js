@@ -27,7 +27,7 @@ const fetchMovimentacoes = async () => {
 };
 
 export default function Dashboard() {
-  //   const [startDate, setStartDate] = useState(new Date());
+  //    const [startDate, setStartDate] = useState(new Date());
     const [movimentacoes, setMovimentacoes] = useState([]);
     const [totalEntradas, setTotalEntradas] = useState(0);
     const [totalSaidas, setTotalSaidas] = useState(0);
@@ -38,15 +38,15 @@ export default function Dashboard() {
    useEffect(() => {
       const carregarMovimentacoes = async () => {
         try {
-          setLoading(true);
-          setError(null);
+          // setLoading(true);
+          // setError(null);
           const dados = await fetchMovimentacoes();
           setMovimentacoes(dados);
         } catch (err) {
           console.error("Erro ao buscar movimentações:", err);
-          setError("Não foi possível carregar as movimentações.");
+          // setError("Não foi possível carregar as movimentações.");
         } finally {
-          setLoading(false);
+          // setLoading(false);
         }
       };
   
