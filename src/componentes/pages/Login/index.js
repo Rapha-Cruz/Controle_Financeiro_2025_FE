@@ -51,7 +51,7 @@ export default function Login({ titulo }) {
                 navigate('/dashboard'); // Exemplo de redirecionamento para a home
             } else {
                 // Erro no login (ex: credenciais inválidas, servidor fora)
-                setError(data.message || 'Erro ao fazer login. Tente novamente.');
+                setError(data.message || 'Erro2222 ao fazer login. Tente novamente.');
             }
         } catch (error) {
             // Erro na requisição (ex: problema de rede)
