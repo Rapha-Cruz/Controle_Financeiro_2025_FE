@@ -15,7 +15,7 @@ const Corpo = styled.div`
     display: flex; // Necessário para centralizar o conteúdo com o wrapper abaixo
 `;
 
-export default function Login({titulo}) {
+export default function Login({ titulo }) {
     // Estados para o email e senha
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
@@ -31,7 +31,7 @@ export default function Login({titulo}) {
         setError(''); // Limpa erros anteriores
 
         try {
-            const response = await fetch('http://localhost:3000/usuarios/login', {
+            const response = await fetch('https://controlefinanceiro2025be-production.up.railway.app/usuarios/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
